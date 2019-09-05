@@ -1,0 +1,14 @@
+.vertical {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-inline.spec {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-inline.spec .vertical {
+    margin-left: 25px;
+}
