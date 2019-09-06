@@ -22,42 +22,46 @@ html
             .row
                 .col
                     h5 Contact Info
-                    .form-inline.spec
+                    .form-inline.spec(title="Location")
                         i.fa.fa-map-marker(aria-hidden="true")
                         p.vertical Charlottesville, Virginia
-                    .form-inline.spec
+                    .form-inline.spec(title="Phone")
                         i.fa.fa-mobile(aria-hidden="true")
                         p.vertical (434)-981-4890
-                    .form-inline.spec
+                    .form-inline.spec(title="E-Mail")
                         i.fa.fa-envelope(aria-hidden="true")
                         a.vertical(href="mailto:michael@gifit.io" target="_blank") michael@gifit.io
-                    .form-inline.spec
+                    .form-inline.spec(title="Website")
                         i.fa.fa-globe(aria-hidden="true")
                         a.vertical(href="https://gifit.io" target="_blank") https://gifit.io
-                    .form-inline.spec
+                    .form-inline.spec(title="GitHub Accounts")
                         i.fa.fa-github(aria-hidden="true")
                         a.vertical(href="https://github.com/spudguy77/" target="_blank") spudguy77
-                    .form-inline.spec
+                    .form-inline.spec(title="LinkedIn")
                         i.fa.fa-linkedin(aria-hidden="true")
                         a.vertical(href="https://www.linkedin.com/in/gmfitzgerald" target="_blank") G. Michael Fitzgerald
             // Main content
             .row
                 // Big info (education, employment, projects)
                 .col-md-8
+                    vr
                     // Projects
                     .row
                         .col
+                            hr
+                            span.section-title(name="projects") Projects
                             // UVAScheduler
-                            .row
+                            .row.resume-block
                                 .col
                                     span
                                         a(href="https://uva-scheduler.herokuapp.com/" target="_blank") UVAScheduler
                                     span Scheduling Webapp for UVA Students
                                     p In the summer of 2019, I developed a web application in conjunction with interns I oversaw. The application’s back end was programmed mainly by myself and a colleague at the UVA Development Hub.
                             // CONEX
-                            .row
+                            .row.resume-block
                                 .col
-                                    span Cavalier Online Experiences (CONEX)
+                                    span
+                                        a(href="https://devhub.virginia.edu/conex/" target="_blank") Cavalier Online Experiences (CONEX)
                                     span Mathematics Bridge Program
                                     p Worked closely with Prof. Jim Rolf at UVA to maintain and overhaul a summer bridge program which saw the enrollment of students who wished to get ahead in math. System uses Nodejs, MongoDB, Heroku, and was deployed as an LTI onto the Canvas LMS at the Curry School of Education.
                     // Experience
@@ -66,11 +70,13 @@ html
                     // Education
                     .row
                         .col
+                            hr
+                            span.section-title(name="education") Education
                             // Undergrad
-                            .row
+                            .row.resume-block
                                 .col
                                     span University of Virginia School of Engineering and Applied Science
-                                    span Bachelor of Science in Computer Science
+                                    span BS: Computer Science
                                     p August 2017 - May 2021
                                     p Overall GPA: 3.84 | CS GPA: 3.96
                                     p Relevant coursework: Program and Data Representation (4.0), Discrete Mathematics (4.0), Theory of Computation (4.0), Algorithms (4.0), Intro Cyber Security (4.0), Adv. Software Development (4.0), Computer Architecture (3.7).
@@ -80,14 +86,19 @@ html
                 // Small info (skills, interests, awards, etc)
                 .col-md-4
                     // Technical Skills
+                    hr
                     .row
                         .col
+                            span Technical Skills
                     // Other Skills
                     .row
                         .col
+                            span Additional Skills
                     // Interests
                     .row
                         .col
+                            span Interests
                     // Awards
                     .row
                         .col
+                            span Awards, Recognitions

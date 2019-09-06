@@ -12,3 +12,37 @@
 .form-inline.spec .vertical {
     margin-left: 25px;
 }
+
+.resume-block span:nth-of-type(1) {
+    font-size: 28px;
+}
+
+.resume-block span:nth-of-type(1):after {
+    content: " — ";
+}
+
+.resume-block span:nth-of-type(2) {
+    font-size: 24px;
+}
+
+span.section-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+span.section-title + .row {
+    margin-top: 65px;
+}
+
+vr {
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 100%;
+    border-right: 1px inset black;
+    width: 1px;
+}
