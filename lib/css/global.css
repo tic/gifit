@@ -37,6 +37,10 @@ span.section-title + .row {
     margin-top: 65px;
 }
 
+/*
+ * Generates a vertical bar along the right of the div it's placed in.
+ * Similar to hr
+**/
 vr {
     position: absolute;
     right: 0;
@@ -45,4 +49,32 @@ vr {
     height: 100%;
     border-right: 1px inset black;
     width: 1px;
+}
+
+/*
+ * Should be attached to a list element (ul, ol).
+**/
+.detailed-bullet-scape { /* Indent the list a little */
+    padding-left: 15px;
+}
+.detailed-bullet-scape li { /* Remove default bullet, change color */
+    list-style: none inside none;
+    color: #bd02fc;
+}
+.detailed-bullet-scape li:before { /* Use custom bullet */
+    color: black;
+    content: "⁍ ";
+}
+.detailed-bullet-scape li span:nth-child(1) { /* Indent child spans a little */
+    margin-left: 10px;
+}
+.detailed-bullet-scape li span { /* Space out spans, give different color */
+    padding-left: 2px;
+    color: #333333;
+}
+.detailed-bullet-scape li span:after { /* Comma separate spans */
+    content: ", ";
+}
+.detailed-bullet-scape li span:nth-last-child(1):after { /* Remove comma from last span */
+    content: "";
 }

@@ -21,25 +21,31 @@ html
             // Personal Info
             .row
                 .col
-                    h5 Contact Info
-                    .form-inline.spec(title="Location")
-                        i.fa.fa-map-marker(aria-hidden="true")
-                        p.vertical Charlottesville, Virginia
-                    .form-inline.spec(title="Phone")
-                        i.fa.fa-mobile(aria-hidden="true")
-                        p.vertical (434)-981-4890
-                    .form-inline.spec(title="E-Mail")
-                        i.fa.fa-envelope(aria-hidden="true")
-                        a.vertical(href="mailto:michael@gifit.io" target="_blank") michael@gifit.io
-                    .form-inline.spec(title="Website")
-                        i.fa.fa-globe(aria-hidden="true")
-                        a.vertical(href="https://gifit.io" target="_blank") https://gifit.io
-                    .form-inline.spec(title="GitHub Accounts")
-                        i.fa.fa-github(aria-hidden="true")
-                        a.vertical(href="https://github.com/spudguy77/" target="_blank") spudguy77
-                    .form-inline.spec(title="LinkedIn")
-                        i.fa.fa-linkedin(aria-hidden="true")
-                        a.vertical(href="https://www.linkedin.com/in/gmfitzgerald" target="_blank") G. Michael Fitzgerald
+                    .row
+                        .col
+                            h5 Contact Info
+                    .row
+                        .col
+                            .form-inline.spec(title="Location")
+                                i.fa.fa-map-marker(aria-hidden="true")
+                                p.vertical Charlottesville, Virginia
+                            .form-inline.spec(title="Phone")
+                                i.fa.fa-mobile(aria-hidden="true")
+                                p.vertical (434)-981-4890
+                        .col
+                            .form-inline.spec(title="E-Mail")
+                                i.fa.fa-envelope(aria-hidden="true")
+                                a.vertical(href="mailto:michael@gifit.io" target="_blank") michael@gifit.io
+                            .form-inline.spec(title="Website")
+                                i.fa.fa-globe(aria-hidden="true")
+                                a.vertical(href="https://gifit.io" target="_blank") https://gifit.io
+                        .col
+                            .form-inline.spec(title="GitHub Accounts")
+                                i.fab.fa-github(aria-hidden="true")
+                                a.vertical(href="https://github.com/spudguy77/" target="_blank") spudguy77
+                            .form-inline.spec(title="LinkedIn")
+                                i.fab.fa-linkedin(aria-hidden="true")
+                                a.vertical(href="https://www.linkedin.com/in/gmfitzgerald" target="_blank") G. Michael Fitzgerald
             // Main content
             .row
                 // Big info (education, employment, projects)
@@ -67,6 +73,22 @@ html
                     // Experience
                     .row
                         .col
+                            hr
+                            span.section-title(name="experience") Experience
+                            .row.resume-block
+                                .col
+                                    span
+                                        a(href="https://devhub.virginia.edu/" target="_blank") UVA Development Hub
+                                    span Developer
+                                    p August 2017 - Present
+                                    p Worked on numerous projects, including development and maintenance of the Devhub API, UVA Scheduler, Cavalier Online Experiences, and others. Oversaw the Internship Placement Program at Devhub, consisting of managing interns each semester.
+                            .row.resume-block
+                                .col
+                                    span
+                                        a(href="https://rpl.mae.virginia.edu/") UVA Mechanical &amp; Aerospace Engineering Rapid Prototyping Lab
+                                    span Lab Assistant
+                                    p September 2018 - Present
+                                    p Printed and designed 3D models for clients. Cleaned and provided basic upkeep on Stratasys FDM and PolyJet machines. Occasionaly provided CAD assistance and to introductory engineering students and graded CAD assignments for Dwight Dart, the head of the lab.
                     // Education
                     .row
                         .col
@@ -90,6 +112,33 @@ html
                     .row
                         .col
                             span Technical Skills
+                            ul.detailed-bullet-scape
+                                li Languages
+                                    span JS
+                                    span Python
+                                    span Java
+                                    span HTML/CSS
+                                    span C/C++
+                                    span x86
+                                    span PHP
+                                li Frameworks + Libraries
+                                    span Nodejs
+                                    span Django
+                                    span React
+                                    span jQuery
+                                    span MD/Bootstrap
+                                li Cloud Services
+                                    span MongoDB
+                                    span AWS
+                                    span Firebase
+                                    span Docker
+                                li Environments + Software
+                                    span Linux
+                                    span VirtualBox
+                                    span Atom
+                                    span Eclipse
+                                    span JUnit
+                                    span Emacs
                     // Other Skills
                     .row
                         .col
