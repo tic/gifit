@@ -54,27 +54,67 @@ vr {
 /*
  * Should be attached to a list element (ul, ol).
 **/
-.detailed-bullet-scape { /* Indent the list a little */
+ul.detailed-bullet-scape { /* Indent the list a little */
     padding-left: 15px;
 }
-.detailed-bullet-scape li { /* Remove default bullet, change color */
+ul.detailed-bullet-scape li { /* Remove default bullet, change color */
     list-style: none inside none;
     color: #bd02fc;
 }
-.detailed-bullet-scape li:before { /* Use custom bullet */
+ul.detailed-bullet-scape li:before { /* Use custom bullet */
     color: black;
     content: "⁍ ";
 }
-.detailed-bullet-scape li span:nth-child(1) { /* Indent child spans a little */
+ul.detailed-bullet-scape li span:nth-child(1) { /* Indent child spans a little */
     margin-left: 10px;
 }
-.detailed-bullet-scape li span { /* Space out spans, give different color */
+ul.detailed-bullet-scape li span { /* Space out spans, give different color */
     padding-left: 2px;
     color: #333333;
 }
-.detailed-bullet-scape li span:after { /* Comma separate spans */
+ul.detailed-bullet-scape li span:after { /* Comma separate spans */
     content: ", ";
 }
-.detailed-bullet-scape li span:nth-last-child(1):after { /* Remove comma from last span */
+ul.detailed-bullet-scape li span:nth-last-child(1):after { /* Remove comma from last span */
     content: "";
+}
+
+/*
+ * Should be applied to a table-like element (rows and cols set up, etc)
+**/
+.course-table .col-md-4 {
+    border-radius: 7px;
+    padding: 25px;
+    position: relative;
+}
+.course-table div.sbg {
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+    border-radius: 10px;
+}
+.course-table .col-md-4:nth-child(2n) div.sbg {
+    background-color: #e4dbff;
+}
+.course-table .col-md-4:nth-child(2n + 1) div.sbg {
+    background-color: #f6dbff;
+}
+.course-table .col-md-4 span:nth-child(1) {
+    font-size: 16px;
+}
+.course-table .col-md-4 span:nth-child(1):after {
+    white-space: pre-wrap;
+    content: "\a";
+}
+.course-table .col-md-4 span:nth-child(2) {
+    font-size: 14px;
+}
+.course-table .col-md-4 span:nth-child(3):before {
+    content: " — Grade "
+}
+.course-table .col-md-4 span:nth-child(3) {
+    font-size: 14px;
 }
