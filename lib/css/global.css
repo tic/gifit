@@ -118,3 +118,7 @@ ul.detailed-bullet-scape li span:nth-last-child(1):after { /* Remove comma from 
 .course-table .col-md-4 span:nth-child(3) {
     font-size: 14px;
 }
+
+a.btn.btn-purple {
+    color: white;
+}
