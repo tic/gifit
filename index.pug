@@ -11,15 +11,16 @@ html
         // Custom CSS
         link(rel="stylesheet" href="lib/css/global.css")
     body
-        .jumbotron
+        //- Uncomment to activate construction banner
+        //- .jumbotron
             h1 This site is currently under construction :)
         .container
-            // Header and such
-            .row
+            //- Header and such
+            .row(style="margin-top:55px;")
                 .col
                     h1 G. Michael Fitzgerald
                     p Creative and motivated Computer Scientist focused on constructing efficient, effective, and long-lasting solutions.
-            // Personal Info
+            //- Personal Info
             .row
                 .col
                     .row
@@ -47,40 +48,40 @@ html
                             .form-inline.spec(title="LinkedIn")
                                 i.fab.fa-linkedin(aria-hidden="true")
                                 a.vertical(href="https://www.linkedin.com/in/gmfitzgerald" target="_blank") G. Michael Fitzgerald
-            // Main content
+            //- Main content
             .row
-                // Big info (education, employment, projects)
+                //- Big info (education, employment, projects)
                 .col-md-8
                     vr
-                    // Projects
+                    //- Projects
                     .row
                         .col
                             hr
                             span.section-title(name="projects") Projects
-                            // UVAScheduler
+                            //- UVAScheduler
                             .row.resume-block
                                 .col
                                     span
                                         a(href="https://scheduler.gifit.io/" target="_blank") UVAScheduler
                                     span Scheduling Webapp for UVA Students
                                     p In the summer of 2019, I developed a web application in conjunction with interns I oversaw. The application’s back end was programmed mainly by myself and a colleague at the UVA Development Hub.
-                            // CONEX
+                            //- CONEX
                             .row.resume-block
                                 .col
                                     span
                                         a(href="https://devhub.virginia.edu/conex/" target="_blank") Cavalier Online Experiences (CONEX)
                                     span Mathematics Bridge Program
                                     p Worked closely with Prof. Jim Rolf at UVA to maintain and overhaul a summer bridge program which saw the enrollment of students who wished to get ahead in math. System uses Nodejs, MongoDB, Heroku, and was deployed as an LTI onto the Canvas LMS at the Curry School of Education.
-                            // Scorigamis
+                            //- Scorigami
                             .row.resume-block
                                 .col
                                     span
-                                        a(href="http://scorigami.gifit.io" target="_blank") Scorigami
+                                        a(href="https://scorigami.gifit.io" target="_blank") Scorigami
                                     span Sports Score Calculator
                                     p Invented by sports writer Jon Bois, Scorigami is the art of watching for games which end in a score that has never happened before in that sport. The webapp I made for this currently tracks NFL Scorigamis and displays a grid of Scores which have never happened. Written in nodejs, hosted on Heroku, and uses MongoDB to store score data retrieved from &nbsp;
                                         a(href="https://pro-football-reference.com" target="_blank") pro-football-reference
                                         | &nbsp; and others.
-                    // Experience
+                    //- Experience
                     .row
                         .col
                             hr
@@ -99,12 +100,12 @@ html
                                     span Lab Assistant
                                     p September 2018 - Present
                                     p Printed and designed 3D models for clients. Cleaned and provided basic upkeep on Stratasys FDM and PolyJet machines. Occasionaly provided CAD assistance and to introductory engineering students and graded CAD assignments for Dwight Dart, the head of the lab.
-                    // Education
+                    //- Education
                     .row
                         .col
                             hr
                             span.section-title(name="education") Education
-                            // Undergrad
+                            //- Undergrad
                             .row.resume-block
                                 .col
                                     span University of Virginia School of Engineering and Applied Science
@@ -114,7 +115,7 @@ html
                                     p The majority of these courses do not allow students to make their solutions public after the course has ended. Some GitHub links will go to the course's repo where the assignments live (unsolved).
                                     p Relevant coursework:
                                     .row.course-table
-                                        // All are md-4 to allow for automatic stacking and wrapping
+                                        //- All are md-4 to allow for automatic stacking and wrapping
                                         .col-md-4
                                             span Program and Data Representation
                                             span Fall 2018
@@ -175,12 +176,12 @@ html
                                             a.btn.btn-purple(href="https://github.com/spudguy77/isa" target="_blank")
                                                 i.fab.fa-github(aria-hidden="true")
                                             div.sbg
-                            // Grad
+                            //- Grad
                             .row
                                 .col
-                // Small info (skills, interests, awards, etc)
+                //- Small info (skills, interests, awards, etc)
                 .col-md-4
-                    // Technical Skills
+                    //- Technical Skills
                     hr
                     .row
                         .col
@@ -212,7 +213,7 @@ html
                                     span Eclipse
                                     span JUnit
                                     span Emacs
-                    // Other Skills
+                    //- Other Skills
                     .row
                         .col
                             span Additional Skills
@@ -220,7 +221,7 @@ html
                                 li Leadership
                                 li Problem solving
                                 li Ability to work under pressure
-                    // Interests
+                    //- Interests
                     .row
                         .col
                             span Interests
@@ -232,7 +233,7 @@ html
                                     span Robotics
                                     span Networks, big data
                                     span Machine Learning
-                    // Awards
+                    //- Awards
                     .row
                         .col
                             span Awards, Recognitions
