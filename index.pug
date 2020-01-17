@@ -1,6 +1,7 @@
 doctype html
 html
     head
+        meta(charset="utf-8")
         title Home | gifit.io
         // Material Design Bootstrap
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css")
@@ -58,29 +59,35 @@ html
                         .col
                             hr
                             span.section-title(name="projects") Projects
-                            //- UVAScheduler
+                            //- Coursanity
                             .row.resume-block
                                 .col
                                     span
-                                        a(href="https://scheduler.gifit.io/" target="_blank") UVAScheduler
-                                    span Scheduling Webapp for UVA Students
-                                    p In the summer of 2019, I developed a web application in conjunction with interns I oversaw. The application’s back end was programmed mainly by myself and a colleague at the UVA Development Hub.
-                            //- CONEX
+                                        a(href="https://github.com/UVAMobileDev/UVAScheduler-react" target="_blank") Coursanity
+                                    span Scheduling App for UVA Students
+                                    p
+                                        | A react-native mobile application designed to aid in the viewing of UVA courses. Designed by myself and with 
+                                        a(href="https://jash.io/" target="_blank") Jason Ashley
+                                        |. The main functionalities of the app run through our Nodejs backend, which is hosted on Heroku and uses Mongo Atlas to store course/user data. The backend was written by us and two interns that I oversaw during the Summer of 2019, and has a 
+                                        a(href="https://scheduler.gifit.io" target="_blank") corresponding web front end
+                                        |, which is not as updated as our react-native app.
+                            //- Realitarium
                             .row.resume-block
                                 .col
                                     span
-                                        a(href="https://devhub.virginia.edu/conex/" target="_blank") Cavalier Online Experiences (CONEX)
-                                    span Mathematics Bridge Program
-                                    p Worked closely with Prof. Jim Rolf at UVA to maintain and overhaul a summer bridge program which saw the enrollment of students who wished to get ahead in math. System uses Nodejs, MongoDB, Heroku, and was deployed as an LTI onto the Canvas LMS at the Curry School of Education.
-                            //- Scorigami
+                                        a(href="https://github.com/tic/Realitarium" target="_blank") Realitarium
+                                    span Virtual Reality Planetarium
+                                    p
+                                        | A virtual planetarium being designed with the intent to be used in a classroom setting at UVA. I am working closely with 
+                                        a(href="https://astronomy.as.virginia.edu/people/emm8x/" target="_blank") Dr. Ed Murphy
+                                        | , a Professor of Astronomy also at UVA. The end goal of this project is to have a mobile application which students can use to enter a planetarium, virtually, during lecture using a device similar to Google Cardboard.
+                            //- Racial Dot Map
                             .row.resume-block
                                 .col
                                     span
-                                        a(href="https://scorigami.gifit.io" target="_blank") Scorigami
-                                    span Sports Score Calculator
-                                    p Invented by sports writer Jon Bois, Scorigami is the art of watching for games which end in a score that has never happened before in that sport. The webapp I made for this currently tracks NFL Scorigamis and displays a grid of Scores which have never happened. Written in nodejs, hosted on Heroku, and uses MongoDB to store score data retrieved from &nbsp;
-                                        a(href="https://pro-football-reference.com" target="_blank") pro-football-reference
-                                        | &nbsp; and others.
+                                        a(href="") Racial Dot Map
+                                    span US Census Demographic Info Viewer
+                                    p Currently under redesign, the existing Racial Dot Map project was built using data from the 2010 census and offers viewers the ability to view a map of the United States with colored dots representing citizens of various races. The new version of the project is intended to update the system for the new 2020 census data!
                     //- Experience
                     .row
                         .col
@@ -100,6 +107,13 @@ html
                                     span Lab Assistant
                                     p September 2018 - Present
                                     p Printed and designed 3D models for clients. Cleaned and provided basic upkeep on Stratasys FDM and PolyJet machines. Occasionaly provided CAD assistance and to introductory engineering students and graded CAD assignments for Dwight Dart, the head of the lab.
+                            .row.resume-block
+                                .col
+                                    span
+                                        a(href="https://asmglobal.com/" target="_blank") ASM Global
+                                    span Operations Changeover Crew, John Paul Jones Arena
+                                    p January 2020 - Present
+                                    p Worked to convert the Arena from one function to another (i.e., basketball to concerts, theater, meetings, and other types of functions). Activities include both interior (tables, chairs, special equipment, etc) and exterior (road signs, traffic cones, etc).
                     //- Education
                     .row
                         .col
@@ -218,15 +232,29 @@ html
                                     span Eclipse
                                     span JUnit
                                     span Emacs
-                    //- Other Skills
+                    //- Soft Skills
                     .row
                         .col
-                            span Additional Skills
+                            span Soft Skills
                             ul.detailed-bullet-scape
                                 li Leadership
                                 li Problem solving
                                 li Ability to work under pressure
+                    //- Additional Projects & Experience
+                    hr
+                    .row
+                        .col
+                            span Additional Projects &amp; Experience
+                            ul.detailed-bullet-scape
+                                li Teaching Assistant
+                                    span Mobile App Development
+                                li Cavalier Online Experiences
+                                    span (Mar '19 - Jan '20) 
+                                        b &nbsp;
+                                        | Worked to bring outdated system back to life and overhaul the 
+                                        a(href="https://github.com/UVAMobileDev/CONEX" target="_blank") codebase.
                     //- Interests
+                    hr
                     .row
                         .col
                             span Interests
@@ -239,6 +267,7 @@ html
                                     span Networks, big data
                                     span Machine Learning
                     //- Awards
+                    hr
                     .row
                         .col
                             span Awards, Recognitions
