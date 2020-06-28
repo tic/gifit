@@ -12,11 +12,19 @@
     <!-- Custom CSS-->
     <link rel="stylesheet" href="lib/css/global.css">
   </head>
-  <body>
+  <body class="dark-mode">
+    <script>
+      function toggleDark() {
+          document.body.classList.toggle("dark-mode");
+          document.getElementById("switcher").classList.toggle("fa-moon");
+          document.getElementById("switcher").classList.toggle("fa-sun");
+      }
+    </script>
     <div class="container">
       <div class="row" style="margin-top:55px;">
         <div class="col">
           <h1>G. Michael Fitzgerald</h1>
+          <button class="btn" id="toggle" onClick="toggleDark()"><i class="fas fa-sun" id="switcher" aria-hidden="true"></i></button>
           <p>Creative and motivated Computer Scientist focused on constructing efficient, effective, and long-lasting solutions.</p>
         </div>
       </div>
@@ -59,13 +67,14 @@
                 </div>
               </div>
               <div class="row resume-block">
-                <div class="col"><span><a href="https://github.com/tic/Realitarium" target="_blank">Realitarium</a></span><span>Virtual Reality Planetarium</span>
-                  <p>A virtual planetarium being designed with the intent to be used in a classroom setting at UVA. I am working closely with <a href="https://astronomy.as.virginia.edu/people/emm8x/" target="_blank">Dr. Ed Murphy</a>, a Professor of Astronomy also at UVA. The end goal of this project is to have a mobile application which students can use to enter a planetarium, virtually, during lecture using a device similar to Google Cardboard.</p>
+                <div class="col"><span><a href="https://github.com/UVAMobileDev/lase" target="_blank">LASE Lab Site</a></span><span>Database Viewer+Editor</span>
+                  <p>Application designed in react-native that extends support to web via the Expo web bundler. Will serve as the replacement website for the folks at <a href="https://lase.mer.utexas.edu/" target="_blank">LASE</a>, a graduate/post-grad research lab at UT Austin. In addition to offering the static contents linked previously, the application also serves as the interaction between researchers and their SQL database, allowing for easy display, filtering, and creation of data. Utilizes a custom API written in AWS' Lambda to interact with RDS.</p>
                 </div>
               </div>
               <div class="row resume-block">
-                <div class="col"><span><a href="">Racial Dot Map</a></span><span>US Census Demographic Info Viewer</span>
-                  <p>Currently under redesign, the existing Racial Dot Map project was built using data from the 2010 census and offers viewers the ability to view a map of the United States with colored dots representing citizens of various races. The new version of the project is intended to update the system for the new 2020 census data!</p>
+                <div class="col"><span><a href="" target="_blank">Botarino</a></span><span>Advanced Discord Bot</span>
+                  <p>
+                     Written with Node using the discord.js library, Botarino is an advanced chatbot which utilizes many JS features new to ES6. Based on a deeply OO configuration, Botarino is capable of hot-reloads triggered by chat commands, multiple layers of fault tolerance, and connection to MongoDB for logging, analytics, and stat tracking.</p>
                 </div>
               </div>
             </div>
@@ -97,43 +106,10 @@
             <div class="col">
               <hr><span class="section-title" name="education">Education</span>
               <div class="row resume-block">
-                <div class="col"><span>University of Virginia School of Engineering and Applied Science</span><span>BS: Computer Science</span>
+                <div class="col"><span>University of Virginia</span><span>BS: Computer Science</span>
+                  <p>School of Engineering and Applied Science</p>
                   <p>August 2017 - May 2021</p>
-                  <p>Overall GPA: 3.84 | CS GPA: 3.96</p>
-                  <p>The majority of these courses do not allow students to make their solutions public after the course has ended. Some GitHub links will go to the course's repo where the assignments live (unsolved).</p>
-                  <p>Relevant coursework:</p>
-                  <div class="row course-table">
-                    <div class="col-md-4"><span>Program and Data Representation</span><span>Fall 2018</span><span>4.0</span><br><a class="btn btn-purple" href="https://github.com/uva-cs/pdr/" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                      <div class="sbg"></div>
-                    </div>
-                    <div class="col-md-4"><span>Discrete Mathematics</span><span>Spring 2018</span><span>4.0</span>
-                      <div class="sbg"></div>
-                    </div>
-                    <div class="col-md-4"><span>Theory of Computation</span><span>Fall 2018</span><span>3.7</span>
-                      <div class="sbg"></div>
-                    </div>
-                    <div class="col-md-4"><span>Algorithms</span><span>Spring 2019</span><span>4.0</span><br><a class="btn btn-purple" href="https://github.com/gmf5de/CS-4102-Homeworks" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                      <div class="sbg"></div>
-                    </div>
-                    <div class="col-md-4"><span>Intro Cyber Security</span><span>Spring 2019</span><span>4.0</span><br><a class="btn btn-purple" href="https://github.com/aaronbloomfield/ics" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                      <div class="sbg"></div>
-                    </div>
-                    <div class="col-md-4"><span>Adv. Software Development</span><span>Spring 2019</span><span>4.0</span><br><a class="btn btn-purple" href="https://github.com/gmf5de/CS-3240-Housing-Locator" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                      <div class="sbg"></div>
-                    </div>
-                    <div class="col-md-4"><span>Computer Architecture</span><span>Spring 2019</span><span>3.7</span>
-                      <div class="sbg"></div>
-                    </div>
-                    <div class="col-md-4"><span>Operating Systems</span><span>Fall 2019</span><span>4.0</span>
-                      <div class="sbg"></div>
-                    </div>
-                    <div class="col-md-4"><span>Internet Scalable Applications</span><span>Fall 2019</span><span>3.7</span><br><a class="btn btn-purple" href="https://github.com/thomaspinckney3/cs4501/" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-                      <div class="sbg"></div>
-                    </div>
-                    <div class="col-md-4"><span>Computer Networks</span><span>Spring 2020</span><span>TBD</span>
-                      <div class="sbg"></div>
-                    </div>
-                  </div>
+                  <p>Overall GPA: 3.856 | CS GPA: 3.918</p>
                 </div>
               </div>
               <div class="row">
@@ -147,19 +123,20 @@
           <div class="row">
             <div class="col"><span>Technical Skills</span>
               <ul class="detailed-bullet-scape">
-                <li>Languages<span>JS</span><span>Python</span><span>Java</span><span>HTML/CSS</span><span>C/C++</span><span>x86</span><span>PHP</span></li>
-                <li>Frameworks + Libraries<span>Nodejs</span><span>Django</span><span>React</span><span>jQuery</span><span>MD/Bootstrap</span></li>
-                <li>Cloud Services<span>MongoDB</span><span>AWS</span><span>Firebase</span><span>Docker</span></li>
-                <li>Environments + Software<span>Linux</span><span>VirtualBox</span><span>Atom</span><span>Eclipse</span><span>JUnit</span><span>Emacs</span></li>
+                <li>Languages<span>JS</span><span>Python</span><span>C/C++/C#</span><span>Java</span><span>PHP</span><span>x86</span><span>HTML/CSS</span><span>SQL</span><span>VB</span></li>
+                <li>Frameworks + Libraries<span>Node</span><span>Django</span><span>React</span><span>jQuery</span><span>MD/Bootstrap</span></li>
+                <li>Cloud Services<span>MongoDB</span><span>Firebase (ltd)</span><span>AWS API Gateway</span><span>AWS Lambda</span><span>RDS</span></li>
+                <li>Environments + Software<span>Linux/Unix</span><span>Windows</span><span>VirtualBox</span><span>Docker</span><span>Atom</span><span>Eclipse</span><span>VS</span><span>JUnit</span><span>Postman</span><span>Swagger/OpenAPI</span></li>
               </ul>
             </div>
           </div>
           <div class="row">
             <div class="col"><span>Soft Skills</span>
               <ul class="detailed-bullet-scape">
-                <li>Leadership</li>
-                <li>Problem solving</li>
-                <li>Ability to work under pressure</li>
+                <li> <span>Leadership</span></li>
+                <li><span>Problem solving</span></li>
+                <li><span>Ability to work under pressure</span></li>
+                <li><span>Internally motivated</span></li>
               </ul>
             </div>
           </div>
@@ -167,9 +144,10 @@
           <div class="row">
             <div class="col"><span>Additional Projects &amp; Experience</span>
               <ul class="detailed-bullet-scape">
-                <li>Teaching Assistant<span>Mobile App Development</span></li>
-                <li>Cavalier Online Experiences<span>(Mar '19 - Jan '20) <b>&nbsp;</b>Worked to bring outdated system back to life and overhaul the <a href="https://github.com/UVAMobileDev/CONEX" target="_blank">codebase.</a></span></li>
-                <li>Scorigami<span>Sports score tracker</span><span><a href="https://" target="_blank">Hosted</a>on Heroku</span></li>
+                <li>Realitarium<span>Unity3D project aimed at recreating a planetarium in virtual reality. <a href="https://github.com/tic/Realitarium/" target="_blank">repo</a></span></li>
+                <li>Teaching Assistant<span>Mobile App Development (Spring '20). <a href="https://danielggraham.com/mobile-development-in-react/" target="_blank">course</a></span></li>
+                <li>Cavalier Online Experiences<span>(Mar '19 - Jan '20) <b>&nbsp;</b>Worked to bring outdated system back to life and overhaul the <a href="https://github.com/UVAMobileDev/CONEX" target="_blank">codebase</a>.</span></li>
+                <li>Scorigami<span>Sports score tracker</span><span><a href="https://nflscorigami.herokuapp.com/" target="_blank">hosted </a>on Heroku</span></li>
               </ul>
             </div>
           </div>
@@ -177,19 +155,66 @@
           <div class="row">
             <div class="col"><span>Interests</span>
               <ul class="detailed-bullet-scape">
-                <li>Hobbies<span>Desktop computer enthusiast</span><span>Electronic sports</span></li>
-                <li>Other<span>Robotics</span><span>Networks, big data</span><span>Machine Learning</span></li>
+                <li>Hobbies<span>Desktop computer enthusiast</span><span>electronic sports</span><span>tinkering</span></li>
+                <li>Other<span>Robotics</span><span>networks</span><span>big data</span><span>machine learning</span></li>
               </ul>
             </div>
           </div>
           <hr>
           <div class="row">
-            <div class="col"><span>Awards, Recognitions</span>
+            <div class="col"><span>Awards, Recognitions, Certifications</span>
               <ul class="detailed-bullet-scape">
                 <li>Scouting<span>Eagle Scout</span><span>Bronze Palm</span></li>
                 <li>UVA<span>Dean's List</span></li>
-                <li>Other<span>Solidworks Professionally Certified (CSWP)</span></li>
+                <li>Other<span>Solidworks Certified (CSWA/CSWP)</span></li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="margin-top:30px">
+      <div class="row" id="coursework">
+        <div class="col">
+          <div class="row">
+            <h4>Relevant coursework</h4>
+            <p>The majority of these courses do not allow students to make their solutions public after the course has ended. Links to course content will reveal whatever is permitted.</p>
+          </div>
+          <div class="row course">
+            <div class="col"><a class="btn btn-purple github" href="https://github.com/uva-cs/pdr/" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a><span>Program and Data Representation</span><span>Fall 2018</span><span>4.0</span></div>
+          </div>
+          <div class="row course">
+            <div class="col"><a class="btn btn-purple github" href="https://github.com/gmf5de/CS-4102-Homeworks" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a><span>Algorithms</span><span>Spring 2019</span><span>4.0</span></div>
+          </div>
+          <div class="row course">
+            <div class="col"><a class="btn btn-purple github" href="https://github.com/aaronbloomfield/ics" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a><span>Intro Cyber Security</span><span>Spring 2019</span><span>4.0</span></div>
+          </div>
+          <div class="row course">
+            <div class="col"><a class="btn btn-purple github" href="https://github.com/gmf5de/CS-3240-Housing-Locator" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a><span>Adv. Software Development</span><span>Spring 2019</span><span>4.0</span></div>
+          </div>
+          <div class="row course">
+            <div class="col">
+              <div></div><span>Computer Architecture</span><span>Spring 2019</span><span>3.7</span>
+            </div>
+          </div>
+          <div class="row course">
+            <div class="col">
+              <div></div><span>Operating Systems</span><span>Fall 2019</span><span>4.0</span>
+            </div>
+          </div>
+          <div class="row course">
+            <div class="col"><a class="btn btn-purple github" href="https://github.com/thomaspinckney3/cs4501/" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a><span>Internet Scalable Applications</span><span>Fall 2019</span><span>3.7</span></div>
+          </div>
+          <div class="row course">
+            <div class="col">
+              <div></div><span>Computer Networks</span><span>Spring 2020</span><span>4.0</span>
+            </div>
+          </div>
+          <div class="row course">
+            <div class="col"><a class="btn btn-purple github" href="https://github.com/tic/Realitarium" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a><span>Virtual Reality Independent Study</span><span>Spring 2020</span><span>4.0</span></div>
+          </div>
+          <div class="row course">
+            <div class="col">
+              <div></div><span>IOT Security Research</span><span>Fall 2020 | Capstone</span><span></span>
             </div>
           </div>
         </div>

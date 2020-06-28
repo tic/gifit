@@ -11,7 +11,13 @@ html
         link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css")
         // Custom CSS
         link(rel="stylesheet" href="lib/css/global.css")
-    body
+    body.dark-mode
+        script.
+            function toggleDark() {
+                document.body.classList.toggle("dark-mode");
+                document.getElementById("switcher").classList.toggle("fa-moon");
+                document.getElementById("switcher").classList.toggle("fa-sun");
+            }
         //- Uncomment to activate construction banner
         //- .jumbotron
             h1 This site is currently under construction :)
@@ -20,6 +26,8 @@ html
             .row(style="margin-top:55px;")
                 .col
                     h1 G. Michael Fitzgerald
+                    button#toggle.btn(onClick="toggleDark()")
+                        i#switcher.fas.fa-sun(aria-hidden="true")
                     p Creative and motivated Computer Scientist focused on constructing efficient, effective, and long-lasting solutions.
             //- Personal Info
             .row
@@ -71,23 +79,24 @@ html
                                         |. The main functionalities of the app run through our Nodejs backend, which is hosted on Heroku and uses Mongo Atlas to store course/user data. The backend was written by us and two interns that I oversaw during the Summer of 2019, and has a 
                                         a(href="https://scheduler.gifit.io" target="_blank") corresponding web front end
                                         |, which is not as updated as our react-native app.
-                            //- Realitarium
+                            //- LASE
                             .row.resume-block
                                 .col
                                     span
-                                        a(href="https://github.com/tic/Realitarium" target="_blank") Realitarium
-                                    span Virtual Reality Planetarium
+                                        a(href="https://github.com/UVAMobileDev/lase" target="_blank") LASE Lab Site
+                                    span Database Viewer+Editor
                                     p
-                                        | A virtual planetarium being designed with the intent to be used in a classroom setting at UVA. I am working closely with 
-                                        a(href="https://astronomy.as.virginia.edu/people/emm8x/" target="_blank") Dr. Ed Murphy
-                                        | , a Professor of Astronomy also at UVA. The end goal of this project is to have a mobile application which students can use to enter a planetarium, virtually, during lecture using a device similar to Google Cardboard.
-                            //- Racial Dot Map
+                                        | Application designed in react-native that extends support to web via the Expo web bundler. Will serve as the replacement website for the folks at 
+                                        a(href="https://lase.mer.utexas.edu/" target="_blank") LASE
+                                        | , a graduate/post-grad research lab at UT Austin. In addition to offering the static contents linked previously, the application also serves as the interaction between researchers and their SQL database, allowing for easy display, filtering, and creation of data. Utilizes a custom API written in AWS' Lambda to interact with RDS.
+                            //- Botarino
                             .row.resume-block
                                 .col
                                     span
-                                        a(href="") Racial Dot Map
-                                    span US Census Demographic Info Viewer
-                                    p Currently under redesign, the existing Racial Dot Map project was built using data from the 2010 census and offers viewers the ability to view a map of the United States with colored dots representing citizens of various races. The new version of the project is intended to update the system for the new 2020 census data!
+                                        a(href="" target="_blank") Botarino
+                                    span Advanced Discord Bot
+                                    p 
+                                        | Written with Node using the discord.js library, Botarino is an advanced chatbot which utilizes many JS features new to ES6. Based on a deeply OO configuration, Botarino is capable of hot-reloads triggered by chat commands, multiple layers of fault tolerance, and connection to MongoDB for logging, analytics, and stat tracking.
                     //- Experience
                     .row
                         .col
@@ -122,79 +131,11 @@ html
                             //- Undergrad
                             .row.resume-block
                                 .col
-                                    span University of Virginia School of Engineering and Applied Science
+                                    span University of Virginia
                                     span BS: Computer Science
+                                    p School of Engineering and Applied Science
                                     p August 2017 - May 2021
-                                    p Overall GPA: 3.84 | CS GPA: 3.96
-                                    p The majority of these courses do not allow students to make their solutions public after the course has ended. Some GitHub links will go to the course's repo where the assignments live (unsolved).
-                                    p Relevant coursework:
-                                    .row.course-table
-                                        //- All are md-4 to allow for automatic stacking and wrapping
-                                        .col-md-4
-                                            span Program and Data Representation
-                                            span Fall 2018
-                                            span 4.0
-                                            br
-                                            a.btn.btn-purple(href="https://github.com/uva-cs/pdr/" target="_blank")
-                                                i.fab.fa-github(aria-hidden="true")
-                                            div.sbg
-                                        .col-md-4
-                                            span Discrete Mathematics
-                                            span Spring 2018
-                                            span 4.0
-                                            div.sbg
-                                        .col-md-4
-                                            span Theory of Computation
-                                            span Fall 2018
-                                            span 3.7
-                                            div.sbg
-                                        .col-md-4
-                                            span Algorithms
-                                            span Spring 2019
-                                            span 4.0
-                                            br
-                                            a.btn.btn-purple(href="https://github.com/gmf5de/CS-4102-Homeworks" target="_blank")
-                                                i.fab.fa-github(aria-hidden="true")
-                                            div.sbg
-                                        .col-md-4
-                                            span Intro Cyber Security
-                                            span Spring 2019
-                                            span 4.0
-                                            br
-                                            a.btn.btn-purple(href="https://github.com/aaronbloomfield/ics" target="_blank")
-                                                i.fab.fa-github(aria-hidden="true")
-                                            div.sbg
-                                        .col-md-4
-                                            span Adv. Software Development
-                                            span Spring 2019
-                                            span 4.0
-                                            br
-                                            a.btn.btn-purple(href="https://github.com/gmf5de/CS-3240-Housing-Locator" target="_blank")
-                                                i.fab.fa-github(aria-hidden="true")
-                                            div.sbg
-                                        .col-md-4
-                                            span Computer Architecture
-                                            span Spring 2019
-                                            span 3.7
-                                            div.sbg
-                                        .col-md-4
-                                            span Operating Systems
-                                            span Fall 2019
-                                            span 4.0
-                                            div.sbg
-                                        .col-md-4
-                                            span Internet Scalable Applications
-                                            span Fall 2019
-                                            span 3.7
-                                            br
-                                            a.btn.btn-purple(href="https://github.com/thomaspinckney3/cs4501/" target="_blank")
-                                                i.fab.fa-github(aria-hidden="true")
-                                            div.sbg
-                                        .col-md-4
-                                            span Computer Networks
-                                            span Spring 2020
-                                            span TBD
-                                            div.sbg
+                                    p Overall GPA: 3.856 | CS GPA: 3.918
                             //- Grad
                             .row
                                 .col
@@ -209,54 +150,71 @@ html
                                 li Languages
                                     span JS
                                     span Python
+                                    span C/C++/C#
                                     span Java
-                                    span HTML/CSS
-                                    span C/C++
-                                    span x86
                                     span PHP
+                                    span x86
+                                    span HTML/CSS
+                                    span SQL
+                                    span VB
                                 li Frameworks + Libraries
-                                    span Nodejs
+                                    span Node
                                     span Django
                                     span React
                                     span jQuery
                                     span MD/Bootstrap
                                 li Cloud Services
                                     span MongoDB
-                                    span AWS
-                                    span Firebase
-                                    span Docker
+                                    span Firebase (ltd)
+                                    span AWS API Gateway
+                                    span AWS Lambda
+                                    span RDS
                                 li Environments + Software
-                                    span Linux
+                                    span Linux/Unix
+                                    span Windows
                                     span VirtualBox
+                                    span Docker
                                     span Atom
                                     span Eclipse
+                                    span VS
                                     span JUnit
-                                    span Emacs
+                                    span Postman
+                                    span Swagger/OpenAPI
                     //- Soft Skills
                     .row
                         .col
                             span Soft Skills
                             ul.detailed-bullet-scape
-                                li Leadership
-                                li Problem solving
-                                li Ability to work under pressure
+                                li 
+                                    span Leadership
+                                li
+                                    span Problem solving
+                                li
+                                    span Ability to work under pressure
+                                li
+                                    span Internally motivated
                     //- Additional Projects & Experience
                     hr
                     .row
                         .col
                             span Additional Projects &amp; Experience
                             ul.detailed-bullet-scape
+                                li Realitarium
+                                    span Unity3D project aimed at recreating a planetarium in virtual reality. 
+                                        a(href="https://github.com/tic/Realitarium/" target="_blank") repo
                                 li Teaching Assistant
-                                    span Mobile App Development
+                                    span Mobile App Development (Spring '20). 
+                                        a(href="https://danielggraham.com/mobile-development-in-react/" target="_blank") course
                                 li Cavalier Online Experiences
                                     span (Mar '19 - Jan '20) 
                                         b &nbsp;
                                         | Worked to bring outdated system back to life and overhaul the 
-                                        a(href="https://github.com/UVAMobileDev/CONEX" target="_blank") codebase.
+                                        a(href="https://github.com/UVAMobileDev/CONEX" target="_blank") codebase
+                                        | .
                                 li Scorigami
                                     span Sports score tracker
                                     span
-                                        a(href="https://" target="_blank") Hosted
+                                        a(href="https://nflscorigami.herokuapp.com/" target="_blank") hosted 
                                         | on Heroku
                     //- Interests
                     hr
@@ -266,16 +224,18 @@ html
                             ul.detailed-bullet-scape
                                 li Hobbies
                                     span Desktop computer enthusiast
-                                    span Electronic sports
+                                    span electronic sports
+                                    span tinkering
                                 li Other
                                     span Robotics
-                                    span Networks, big data
-                                    span Machine Learning
+                                    span networks
+                                    span big data
+                                    span machine learning
                     //- Awards
                     hr
                     .row
                         .col
-                            span Awards, Recognitions
+                            span Awards, Recognitions, Certifications
                             ul.detailed-bullet-scape
                                 li Scouting
                                     span Eagle Scout
@@ -283,4 +243,77 @@ html
                                 li UVA
                                     span Dean's List
                                 li Other
-                                    span Solidworks Professionally Certified (CSWP)
+                                    span Solidworks Certified (CSWA/CSWP)
+            //- Relevant Coursework
+            hr(style="margin-top:30px")
+            .row#coursework
+                .col
+                    .row
+                        h4 Relevant coursework
+                        p The majority of these courses do not allow students to make their solutions public after the course has ended. Links to course content will reveal whatever is permitted.
+                    .row.course
+                        .col
+                            a.btn.btn-purple.github(href="https://github.com/uva-cs/pdr/" target="_blank")
+                                i.fab.fa-github(aria-hidden="true")
+                            span Program and Data Representation
+                            span Fall 2018
+                            span 4.0
+                    .row.course
+                        .col
+                            a.btn.btn-purple.github(href="https://github.com/gmf5de/CS-4102-Homeworks" target="_blank")
+                                i.fab.fa-github(aria-hidden="true")
+                            span Algorithms
+                            span Spring 2019
+                            span 4.0
+                    .row.course
+                        .col
+                            a.btn.btn-purple.github(href="https://github.com/aaronbloomfield/ics" target="_blank")
+                                i.fab.fa-github(aria-hidden="true")
+                            span Intro Cyber Security
+                            span Spring 2019
+                            span 4.0
+                    .row.course
+                        .col
+                            a.btn.btn-purple.github(href="https://github.com/gmf5de/CS-3240-Housing-Locator" target="_blank")
+                                i.fab.fa-github(aria-hidden="true")
+                            span Adv. Software Development
+                            span Spring 2019
+                            span 4.0
+                    .row.course
+                        .col
+                            div
+                            span Computer Architecture
+                            span Spring 2019
+                            span 3.7
+                    .row.course
+                        .col
+                            div
+                            span Operating Systems
+                            span Fall 2019
+                            span 4.0
+                    .row.course
+                        .col
+                            a.btn.btn-purple.github(href="https://github.com/thomaspinckney3/cs4501/" target="_blank")
+                                i.fab.fa-github(aria-hidden="true")
+                            span Internet Scalable Applications
+                            span Fall 2019
+                            span 3.7
+                    .row.course
+                        .col
+                            div
+                            span Computer Networks
+                            span Spring 2020
+                            span 4.0
+                    .row.course
+                        .col
+                            a.btn.btn-purple.github(href="https://github.com/tic/Realitarium" target="_blank")
+                                i.fab.fa-github(aria-hidden="true")
+                            span Virtual Reality Independent Study
+                            span Spring 2020
+                            span 4.0
+                    .row.course
+                        .col
+                            div
+                            span IOT Security Research
+                            span Fall 2020 | Capstone
+                            span
