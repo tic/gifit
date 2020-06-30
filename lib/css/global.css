@@ -1,4 +1,8 @@
 
+body {
+    transition: all .15s linear;
+}
+
 .dark-mode {
     background-color: #252525;
     color: #bababa;
@@ -33,7 +37,7 @@
 }
 
 .dark-mode a {
-    color: #ff4d00;
+    color: #0b8ce8;
 }
 
 .dark-mode #coursework .course {
