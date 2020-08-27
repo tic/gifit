@@ -197,3 +197,10 @@ a.github i {
     left: -7px;
     top: -5px;
 }
+
+#self {
+    width: "100%";
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
