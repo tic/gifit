@@ -178,8 +178,28 @@ ul.detailed-bullet-scape li span:nth-last-child(1):after { /* Remove comma from 
     bottom: 2px;
 }
 
-#coursework a.github {
+#coursework a {
     margin-right: 10px;
+}
+
+a.class-site {
+    position: relative;
+    top: -2px;
+    margin: 0px;
+    height: 25px;
+    width: 25px;
+    font-size: 15px;
+    color: white;
+}
+
+a.class-site:hover {
+    color: #000;
+}
+
+a.class-site i {
+    position: relative;
+    left: -8px;
+    top: -7px;
 }
 
 a.github {
