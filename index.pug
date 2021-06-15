@@ -26,7 +26,7 @@ html
             //- Header and such
             .row(style="margin-top:55px;")
                 .col-md-1
-                    img#self(src="lib/img/self.jpg" style="width: 100%")
+                    img#self(src="lib/img/self2.jpg" style="width: 100%")
                 .col
                     h1 G. Michael Fitzgerald
                     button#toggle.btn(onClick="toggleDark()")
@@ -67,18 +67,6 @@ html
                         .col
                             hr
                             span.section-title(name="projects") Projects
-                            //- Coursanity
-                            .row.resume-block
-                                .col
-                                    span
-                                        a(href="https://github.com/UVAMobileDev/UVAScheduler-react" target="_blank") Coursanity
-                                    span Scheduling App for UVA Students
-                                    p
-                                        | A react-native mobile application designed to aid in the viewing of UVA courses. Designed by myself and with 
-                                        a(href="https://jash.io/" target="_blank") Jason Ashley
-                                        |. The main functionalities of the app run through our Nodejs backend, which is hosted on Heroku and uses Mongo Atlas to store course/user data. The backend was written by us and two interns that I oversaw during the Summer of 2019, and has a 
-                                        a(href="https://scheduler.gifit.io" target="_blank") corresponding web front end
-                                        |, which is not as updated as our react-native app.
                             //- LASE
                             .row.resume-block
                                 .col
@@ -89,6 +77,16 @@ html
                                         | Application designed in react-native that extends support to web via the Expo web bundler. Will serve as the replacement website for the researchers at 
                                         a(href="https://lase.mer.utexas.edu/" target="_blank") LASE
                                         | , a graduate/post-grad research lab at UT Austin. In addition to offering the static contents linked previously, the application also serves as the interaction between researchers and their SQL database, allowing for easy display, filtering, and creation of data. Utilizes a custom API written in AWS' Lambda to interact with RDS.
+                            //- Coursanity
+                            .row.resume-block
+                                .col
+                                    span
+                                        a(href="https://github.com/UVAMobileDev/UVAScheduler-react" target="_blank") Coursanity
+                                    span Scheduling App for UVA Students
+                                    p
+                                        | A react-native mobile application designed to aid in the viewing of UVA courses. The main functionalities of the app run through our Nodejs backend, which is hosted on Heroku and uses Mongo Atlas to store course/user data. The backend was written by us and two interns that I oversaw during the Summer of 2019, and has a 
+                                        a(href="https://scheduler.gifit.io" target="_blank") corresponding web front end
+                                        |, which is not as updated as our react-native app.
                             //- Botarino
                             .row.resume-block
                                 .col
@@ -137,8 +135,13 @@ html
                                     p August 2017 - May 2021
                                     p Overall GPA: 3.88 | CS GPA: 3.94
                             //- Grad
-                            .row
+                            .row.resume-block
                                 .col
+                                    span University of Virginia
+                                    span MS: Computer Science
+                                    p School of Engineering and Applied Science
+                                    p August 2021 - May 2022
+                                    p Thesis: TBD
                 //- Small info (skills, interests, awards, etc)
                 .col-md-4
                     //- Technical Skills
@@ -170,6 +173,10 @@ html
                                     span Lambda
                                     span RDS
                                     span VTL
+                                    span Cognito
+                                    span Amplify
+                                    span EC2
+                                    span S3
                                 li Environments + Software
                                     span Linux/Unix
                                     span Windows
@@ -199,17 +206,21 @@ html
                                 li
                                     span Ability to work under pressure
                                 li
-                                    span Internally motivated
+                                    span Motivated
                     //- Additional Projects & Experience
                     hr
                     .row
                         .col
                             span Additional Projects &amp; Experience
                             ul.detailed-bullet-scape
+                                li SpaceBot
+                                    span Website, Discord bot, and web scraper which keep users up-to-date with the latest information concerning spaceflight activities. 
+                                        a(href="https://github.com/tic/space-bot" target="_blank") repo
                                 li Realitarium
                                     span Unity3D project aimed at recreating a planetarium in virtual reality. 
                                         a(href="https://github.com/tic/Realitarium/" target="_blank") repo
                                 li Teaching Assistant
+                                    span Introduction to Engineering (Fall '19, '20)
                                     span Mobile App Development (Spring '20). 
                                         a(href="https://danielggraham.com/mobile-development-in-react/" target="_blank") course
                                 li Cavalier Online Experiences
@@ -264,7 +275,14 @@ html
                                 i.fa.fa-graduation-cap(aria-hidden="true")
                             span Introduction to Cryptography
                             span Spring 2021
-                            span TBD
+                            span 3.7
+                    .row.course
+                        .col
+                            a.btn.btn-purple.github(href="https://github.com/tic/cloudproject" target="_blank" title="Term Project Repository")
+                                i.fa.fa-graduation-cap(aria-hidden="true")
+                            span Cloud Computing
+                            span Spring 2021
+                            span 4.0
             .row#coursework
                 .col
                     .row

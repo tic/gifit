@@ -23,7 +23,7 @@
     </script>
     <div class="container">
       <div class="row" style="margin-top:55px;">
-        <div class="col-md-1"><img id="self" src="lib/img/self.jpg" style="width: 100%"></div>
+        <div class="col-md-1"><img id="self" src="lib/img/self2.jpg" style="width: 100%"></div>
         <div class="col">
           <h1>G. Michael Fitzgerald</h1>
           <button class="btn" id="toggle" onClick="toggleDark()"><i class="fas fa-sun" id="switcher" aria-hidden="true"></i></button>
@@ -63,13 +63,13 @@
             <div class="col">
               <hr><span class="section-title" name="projects">Projects</span>
               <div class="row resume-block">
-                <div class="col"><span><a href="https://github.com/UVAMobileDev/UVAScheduler-react" target="_blank">Coursanity</a></span><span>Scheduling App for UVA Students</span>
-                  <p>A react-native mobile application designed to aid in the viewing of UVA courses. Designed by myself and with <a href="https://jash.io/" target="_blank">Jason Ashley</a>. The main functionalities of the app run through our Nodejs backend, which is hosted on Heroku and uses Mongo Atlas to store course/user data. The backend was written by us and two interns that I oversaw during the Summer of 2019, and has a <a href="https://scheduler.gifit.io" target="_blank">corresponding web front end</a>, which is not as updated as our react-native app.</p>
+                <div class="col"><span><a href="https://github.com/UVAMobileDev/lase" target="_blank">LASE Lab Site</a></span><span>Database Viewer+Editor</span>
+                  <p>Application designed in react-native that extends support to web via the Expo web bundler. Will serve as the replacement website for the researchers at <a href="https://lase.mer.utexas.edu/" target="_blank">LASE</a>, a graduate/post-grad research lab at UT Austin. In addition to offering the static contents linked previously, the application also serves as the interaction between researchers and their SQL database, allowing for easy display, filtering, and creation of data. Utilizes a custom API written in AWS' Lambda to interact with RDS.</p>
                 </div>
               </div>
               <div class="row resume-block">
-                <div class="col"><span><a href="https://github.com/UVAMobileDev/lase" target="_blank">LASE Lab Site</a></span><span>Database Viewer+Editor</span>
-                  <p>Application designed in react-native that extends support to web via the Expo web bundler. Will serve as the replacement website for the researchers at <a href="https://lase.mer.utexas.edu/" target="_blank">LASE</a>, a graduate/post-grad research lab at UT Austin. In addition to offering the static contents linked previously, the application also serves as the interaction between researchers and their SQL database, allowing for easy display, filtering, and creation of data. Utilizes a custom API written in AWS' Lambda to interact with RDS.</p>
+                <div class="col"><span><a href="https://github.com/UVAMobileDev/UVAScheduler-react" target="_blank">Coursanity</a></span><span>Scheduling App for UVA Students</span>
+                  <p>A react-native mobile application designed to aid in the viewing of UVA courses. The main functionalities of the app run through our Nodejs backend, which is hosted on Heroku and uses Mongo Atlas to store course/user data. The backend was written by us and two interns that I oversaw during the Summer of 2019, and has a <a href="https://scheduler.gifit.io" target="_blank">corresponding web front end</a>, which is not as updated as our react-native app.</p>
                 </div>
               </div>
               <div class="row resume-block">
@@ -113,8 +113,12 @@
                   <p>Overall GPA: 3.88 | CS GPA: 3.94</p>
                 </div>
               </div>
-              <div class="row">
-                <div class="col"></div>
+              <div class="row resume-block">
+                <div class="col"><span>University of Virginia</span><span>MS: Computer Science</span>
+                  <p>School of Engineering and Applied Science</p>
+                  <p>August 2021 - May 2022</p>
+                  <p>Thesis: TBD</p>
+                </div>
               </div>
             </div>
           </div>
@@ -126,7 +130,7 @@
               <ul class="detailed-bullet-scape">
                 <li>Languages<span>JS</span><span>Python</span><span>C/C++/C#</span><span>Java</span><span>PHP</span><span>x86</span><span>HTML/CSS</span><span>SQL</span><span>VB</span></li>
                 <li>Frameworks + Libraries<span>Node</span><span>Django</span><span>React</span><span>jQuery</span><span>MD/Bootstrap</span></li>
-                <li>Cloud Services<span>MongoDB</span><span>Firebase (ltd)</span><span>AWS API Gateway</span><span>Lambda</span><span>RDS</span><span>VTL</span></li>
+                <li>Cloud Services<span>MongoDB</span><span>Firebase (ltd)</span><span>AWS API Gateway</span><span>Lambda</span><span>RDS</span><span>VTL</span><span>Cognito</span><span>Amplify</span><span>EC2</span><span>S3</span></li>
                 <li>Environments + Software<span>Linux/Unix</span><span>Windows</span><span>Virtualization (VirtualBox, etc)</span><span>Docker</span><span>Atom</span><span>Eclipse</span><span>VS</span><span>JUnit</span><span>Postman</span><span>Swagger/OpenAPI</span><span>Solidworks</span><span>OpenSCAD</span></li>
                 <li>Other<span>Linear Algebra</span><span>Complex Variable Applications</span><span>Partial Differential Equations</span></li>
               </ul>
@@ -138,7 +142,7 @@
                 <li> <span>Leadership</span></li>
                 <li><span>Problem solving</span></li>
                 <li><span>Ability to work under pressure</span></li>
-                <li><span>Internally motivated</span></li>
+                <li><span>Motivated</span></li>
               </ul>
             </div>
           </div>
@@ -146,8 +150,9 @@
           <div class="row">
             <div class="col"><span>Additional Projects &amp; Experience</span>
               <ul class="detailed-bullet-scape">
+                <li>SpaceBot<span>Website, Discord bot, and web scraper which keep users up-to-date with the latest information concerning spaceflight activities. <a href="https://github.com/tic/space-bot" target="_blank">repo</a></span></li>
                 <li>Realitarium<span>Unity3D project aimed at recreating a planetarium in virtual reality. <a href="https://github.com/tic/Realitarium/" target="_blank">repo</a></span></li>
-                <li>Teaching Assistant<span>Mobile App Development (Spring '20). <a href="https://danielggraham.com/mobile-development-in-react/" target="_blank">course</a></span></li>
+                <li>Teaching Assistant<span>Introduction to Engineering (Fall '19, '20)</span><span>Mobile App Development (Spring '20). <a href="https://danielggraham.com/mobile-development-in-react/" target="_blank">course</a></span></li>
                 <li>Cavalier Online Experiences<span>(Mar '19 - Jan '20) <b>&nbsp;</b>Worked to bring outdated system back to life and overhaul the <a href="https://github.com/UVAMobileDev/CONEX" target="_blank">codebase</a>.</span></li>
                 <li>Scorigami<span>Sports score tracker</span><span><a href="https://nflscorigami.herokuapp.com/" target="_blank">hosted </a>on Heroku</span></li>
               </ul>
@@ -182,7 +187,10 @@
             <p>These courses were taken at the graduate instruction level. Courses have external links when applicable.</p>
           </div>
           <div class="row course">
-            <div class="col"><a class="btn btn-success class-site" href="https://www.cs.virginia.edu/dwu4/courses/sp21/index.html" target="_blank" title="Course Website"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a><span>Introduction to Cryptography</span><span>Spring 2021</span><span>TBD</span></div>
+            <div class="col"><a class="btn btn-success class-site" href="https://www.cs.virginia.edu/dwu4/courses/sp21/index.html" target="_blank" title="Course Website"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a><span>Introduction to Cryptography</span><span>Spring 2021</span><span>3.7</span></div>
+          </div>
+          <div class="row course">
+            <div class="col"><a class="btn btn-purple github" href="https://github.com/tic/cloudproject" target="_blank" title="Term Project Repository"><i class="fa fa-graduation-cap" aria-hidden="true"></i></a><span>Cloud Computing</span><span>Spring 2021</span><span>4.0</span></div>
           </div>
         </div>
       </div>
